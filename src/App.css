@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+.input-block {
+  margin-top: 40px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+
+}
+.input-block input {
+  padding: 5px 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+.input-block button {
+  border-radius: 12px;
+  background-color: rgb(226, 226, 226);
+  text-align: center;
+  padding: 5px 15px;
+  transition: .5s;
+  border: 1px solid #000;
+
+}
+.input-block button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+.board-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.board-block .column {
+  width: 45%;
+}
+
+.droppable-col {
+  width: 100%;
+  background-color: aliceblue;
+  padding: 20px 20px 0 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  border: 2px solid rgb(43, 43, 43);
+}
+
+.item {
+  margin-bottom: 10px; 
+  color: #000;
+  border: 1px solid rgb(43, 43, 43);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.item.dragging {
+  background-color: rgb(255, 175, 145);
+}
